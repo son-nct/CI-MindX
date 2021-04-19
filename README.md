@@ -1,2 +1,2 @@
-#Repository for MindX
-##My name is Sơn
+# Repository for MindX
+## My name is Sơn
