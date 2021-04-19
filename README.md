@@ -1,2 +1,2 @@
 # Repository MindX
-### Hi! My name is Sơn.
+###  © 2020 by Nguyen Cong Thai Son | FPT University, HCMC
