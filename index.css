@@ -1,0 +1,23 @@
+.menu {
+    
+}
+
+.menu > span {
+    display: inline-block;
+    background-color: pink;
+    font-family: sans-serif;
+    width: 100px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+span:hover {
+    color: #fff;
+    background-color: rgb(57, 207, 57);
+    cursor: pointer;
+}
+
+.menu-vertical > span{
+    display: block;
+}
