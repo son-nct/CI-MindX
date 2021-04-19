@@ -1,2 +1,2 @@
 # Repository for MindX
-## My name is Sơn
+## My name is Sơn :shipit:
