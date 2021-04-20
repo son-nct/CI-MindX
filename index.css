@@ -1,23 +1,47 @@
-.menu {
-    
-}
 
-.menu > span {
+span {
     display: inline-block;
-    background-color: pink;
-    font-family: sans-serif;
     width: 100px;
-    height:30px;
+    height: 30px;
+    position: relative;
     text-align: center;
+    background-color: #CDA5A2;
     line-height: 30px;
 }
 
 span:hover {
-    color: #fff;
-    background-color: rgb(57, 207, 57);
+    background-color: #93ca85;
+    color: white;
     cursor: pointer;
 }
 
-.menu-vertical > span{
+span ul {
+    padding-left: 0;
+    background-color: yellow;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+
+
+span ul li {
+    list-style-type: none;
+    text-align: center;
+    font-family: 20px;
+    color: black;
+}
+
+span ul li:hover {
+    background-color: red;
+}
+
+
+.dropdown {
+    display: none;
+}
+
+span:hover .dropdown {
     display: block;
 }
