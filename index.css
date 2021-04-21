@@ -1,23 +1,183 @@
-.menu {
-    
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
 }
 
-.menu > span {
-    display: inline-block;
-    background-color: pink;
-    font-family: sans-serif;
-    width: 100px;
-    height:30px;
-    text-align: center;
-    line-height: 30px;
+* {
+  box-sizing: inherit;
 }
 
-span:hover {
-    color: #fff;
-    background-color: rgb(57, 207, 57);
-    cursor: pointer;
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
-.menu-vertical > span{
-    display: block;
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #f3e1e3;
+}
+
+.form-container {
+  width: 50%;
+  height: 480px;
+  border-radius: 15px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.introduction-container {
+  width: 50%;
+  background-image: linear-gradient(45deg, #fe464d, #ff4367);
+  position: relative;
+  border-radius: 10px 0 0 10px;
+}
+
+.introduction-form {
+  width: 60%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.introduction-title {
+  line-height: 30px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff9ff;
+  font-weight: 800;
+}
+
+.introduction-description {
+  font-size: 1.6rem;
+  color: #ffc5dd;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.form-login {
+  background-color: var(--white-color);
+  width: 50%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.form-login-header h3 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-login-header-social-icon {
+  text-align: center;
+}
+
+.social-icon-link {
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.form-login-header-social-icon a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.social-icon-link:hover {
+  color: #4481eb;
+  border-color: #4481eb;
+}
+
+.form-login-body {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.form-login-body p {
+  font-size: 1.5rem;
+  color: #b3aca7;
+}
+
+.form-login-body-input {
+}
+
+.form-login-body-input input::placeholder {
+  color: #8394a2;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.form-login-body-input input {
+  width: 80%;
+  height: 40px;
+  margin-bottom: 5%;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid black;
+  font-size: 1.8rem;
+  background-color: #efefef;
+  border: none;
+  font-weight: 400;
+  position: relative;
+}
+.form-login-body-btn {
+}
+
+.form-login-body-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin: -5% 0 0 40px;
+}
+
+.form-login-body-checkbox input {
+  margin-right: 5px;
+}
+
+.form-login-body-checkbox p {
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.login-btn {
+  margin-top: 4%;
+  border-radius: 20px;
+  border: 1px solid #e93a1c;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.login-btn:hover {
+  background-color: #fa3b19;
+}
+
+.form-login-footer {
+  margin-top: 5%;
+  font-size: 1.3rem;
+}
+
+.form-login-footer a {
+  cursor: pointer;
+  margin-right: 5px;
 }

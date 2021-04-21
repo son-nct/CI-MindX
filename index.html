@@ -4,21 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"rel="stylesheet"/>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="index.css"/>
+
+      
+    
+   
   </head>
   <body>
-    <nav class="menu">
+
+    <div class="container">
+      <div class="form-container">
+
+        <div class="introduction-container">
+            <div class="introduction-form">
+
+            <span class="introduction-title">
+              <h3>HTML CSS Login Form</h3>
+            </span>
+
+            <span class="introduction-description">
+                <p>
+                    The login form is created using HTML and CSS.For social icons,
+                    Font-Awesome is used
+                </p>
+            </span>
+
+          </div>
+        </div>
+
+        <div class="form-login">
+
+            <div class="form-login-header">
+                <h3>Login</h3>
+
+                <div class="form-login-header-social-icon">
+                    <a class="social-icon-link" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a class="social-icon-link" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a class="social-icon-link" href="https://www.twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="form-login-body">
+                <p>or use your account</p>
+
+                <div class="form-login-body-input">
+                  <input type="text" placeholder="Username" />
+                </div>
+
+                <div class="form-login-body-input">
+                    <input type="password" placeholder="Password" />
+                </div>
+
+                <div class="form-login-body-checkbox">
+                    <input type="checkbox"/> 
+                    <p>Remember me</p>
+                </div>
+
+                <div class="form-login-body-btn">
+                    <button class="login-btn">Login</button>
+                </div>
+
+                <div class="form-login-footer">
+                    <a>Forgot Password ?</a>
+
+                    <a>Dont have any account?</a>
+                </div>
+            
+            </div>
+        </div>
         
-    </nav>
-
-    <!-- <nav class="menu menu-vertical">
-        <span>Item 1</span>
-        <span>Item 2</span>
-        <span>Item 3</span>
-        <span>Item 4</span>
-    </nav> -->
-
-    <script src="scrip.js"></script>
+    </div>
   </body>
 </html>
