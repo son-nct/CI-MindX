@@ -4,21 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.15.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"
+    />
   </head>
   <body>
-    <nav class="menu">
-        
-    </nav>
+    <div class="main">
+        <header>
+            <nav class="weather-nav">
+                <span class="nav-bar-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
 
-    <!-- <nav class="menu menu-vertical">
-        <span>Item 1</span>
-        <span>Item 2</span>
-        <span>Item 3</span>
-        <span>Item 4</span>
-    </nav> -->
+                <span class="nav-logo">
+                    <img src="https://mindx.edu.vn/images/logo.png" alt="MindX logo" />
+                </span>
 
-    <script src="scrip.js"></script>
+                <div class="nav-search-desktop">
+                    <i class="fas fa-location-arrow"></i>
+                    <input type="text" name="" id="input-search-desktop">
+                </div> 
+
+            </nav>
+        </header>
+
+        <div class="container">
+
+                <div class="main-notify-weather">
+
+                    <div class="header-main-title">
+                        <h5>Current Location</h5>
+                    </div>
+
+                    <div class="header-main-location">
+                        <h5 id="location">Ho Chi Minh , Vietnam</h5>
+                    </div>
+
+                    <div class="header-main-img">
+                        <img style="width: 126px;height: 126px;" src="./img/day_clear.png" alt="Day rain image" id="main-img" />
+                    </div>
+
+                    <div class="header-main-temp">
+                        <h5 class="main-temp">30°C</h5>
+                    </div>
+
+                    <div class="header-main-weather">
+                        <p class="main-weather">light rain</p>
+                        <p class="feel-like-temp">Feel like 35°C</p>
+                    </div>
+                </div>
+
+            <div class="sub-notify-weather">
+
+            </div>
+
+           
+        </div>
+    </div>
+    
+    <div class="modal hidden-modal">
+        <div class="modal-orverlay"></div>
+
+        <div class="modal-body">
+            <i id="close-icon" class="fas fa-times"></i>
+
+            <div class="modal-input-search">
+                <input type="text" name="" id="input-search">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="modal-location">
+                <i class="fas fa-location-arrow"></i>
+                <p>Current Location</p>
+            </div> 
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
