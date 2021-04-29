@@ -129,14 +129,6 @@ function convertDayName(dt) {
   return dayName;
 }
 
-// <!-- <div class="notify-by-day">
-// <p>Mon</p>
-// <span>
-//     <img src="./img/day_rain.png" alt="Day rain img" />
-// </span>
-// <h5>26°C</h5>
-// </div>
-
 
 function addChildElementToParent(parent, a, b, c) {
   parent.appendChild(a);
